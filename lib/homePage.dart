@@ -32,7 +32,10 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      body: Text("1"),
+      body: Row(
+        children: [ 
+          Image.asset(
+              "asset/image/danh-muc.png",height: 40)],),
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: Colors.blue,
         type: BottomNavigationBarType.fixed,
