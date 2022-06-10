@@ -52,7 +52,11 @@ class _HomePageState extends State<HomePage> {
               icon: Image.asset("asset/image/thong-bao.png", height: 30)),
           BottomNavigationBarItem(
               label: "Cá nhân",
-              icon: Image.asset("asset/image/user.png", height: 30))
+              icon: Image.asset("asset/image/user.png", height: 30)),
+          BottomNavigationBarItem(
+              label: "Cài đặt",
+              icon: Image.asset("asset/image/cai-dat.png", height: 30)),
+              
         ],
         currentIndex: _currentIndex,
         onTap: (index) {
