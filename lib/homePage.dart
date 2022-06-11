@@ -33,9 +33,12 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Row(
-        children: [ 
-          Image.asset(
-              "asset/image/danh-muc.png",height: 40)],),
+        children: [
+          Image.asset("asset/image/danh-muc.png", height: 40),
+          const Text("Giới thiệu"),
+          Image.asset("asset/image/tim-kiem.png", height: 40),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         fixedColor: Colors.blue,
         type: BottomNavigationBarType.fixed,
@@ -49,7 +52,6 @@ class _HomePageState extends State<HomePage> {
               height: 30,
             ),
           ),
-          
           BottomNavigationBarItem(
               label: "Thông báo",
               icon: Image.asset("asset/image/thong-bao.png", height: 30)),
@@ -59,7 +61,6 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
               label: "Cài đặt",
               icon: Image.asset("asset/image/cai-dat.png", height: 30)),
-              
         ],
         currentIndex: _currentIndex,
         onTap: (index) {
